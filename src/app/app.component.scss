@@ -1,0 +1,29 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .weather-app {
+        padding: 36px;
+        width: 360px;
+        height: 640px;
+        background-color: #E9B329;
+        border-radius: 12px;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        img {
+            position: absolute;
+            top: 70px;
+            right: 0;
+        }
+
+        app-details {
+            height: 100%;
+        }
+    }
+}

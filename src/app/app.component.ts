@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { WeatherService } from './weather.service'; //import weather service
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'WeatherApp';
+  constructor(private weather:WeatherService){
+    this.weather.getFromUserSelection("medellin").subscribe(data =>console.log(data));
+  }
 }
