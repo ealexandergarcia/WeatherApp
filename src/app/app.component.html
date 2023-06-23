@@ -2,11 +2,12 @@
   <section class="weather-app">
     <img src="../assets/bgImage.svg" alt="">
 
-    <app-search-box></app-search-box>
+    <app-search-box (searchValue)="getWeatherInfo($event)"></app-search-box>
 
-    <app-main-info></app-main-info>
+    <app-main-info [weatherInfo]="weatherInfo"></app-main-info>
     
     <app-details></app-details>
     
   </section>
 </main>
+
