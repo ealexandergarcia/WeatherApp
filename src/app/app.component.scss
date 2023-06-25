@@ -4,6 +4,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: soft-light;
+    transition: all 0.8s;
 
     .weather-app {
         padding: 36px;
